@@ -1,10 +1,42 @@
-const pops = [
-  "Boy, sejujurnya, awak merubah segalanya tentang saya and especially untuk kita. I tak tahu kenapa i dah sampai tahap ni dengan you. I don't know apa yang awak rasa tentang kita. Awak selalu buat saya gelak walaupun tengah stress. Apa yang saya boleh cakap sekarang, You are my world right now 😌🤍. I rasa sampai i tak boleh takdk you, boy 🥺 I rasa sayangg sangat. but cannot describe it 🤍 ",
-  "Kalau awak nak tahu kan, baby. Bila awak tkdk, saya suka baca kita yang dulu, and apa yang awak cakap dulu, memang betul. awak pernah cakap : kalau dengan i, keras you tu akan jadi lembut, percayalah.: and you know what, its happen sekarang. i sangat lembut dengan you, i nak you ada selalu dengan i. i mcm sangat bergantung dengan you. i nak involve everything with you. Saya rasa sampai saya tak boleh tkdak awak, boy 🥺 Tapi pada yang sama saya takut sebab kita tak pernah jumpa, tapi saya sesetia ini and already one year. awak sedar tak bende tu? saya rasa sayang tapi saya tahu yang saya tak boleh berharap.",
-  "Untuk kita, saya rasa kita dah banyak lalui benda yang susah and senang walaupun cuma di dalam maya. 🤍 Saya rasa kita dah banyak belajar tentang diri masing-masing 🤍 Saya rasa kita dah banyak kenal satu sama lain 🤍 Saya rasa kita dah banyak kongsi cerita and pengalaman. Saya rasa kita dah banyak buat kenangan together 🤍 Tapi kita tak pernah describe rasa sayang each other tu 🥺🤍. And maybe kita dua dua tak pandai. Macam yang you cakap, bende tu akan naturally datang. Kalau you nk tahu, apa yang jadi sekarang, dia mengingatkan i balik semua apa yang you pernah cakap dulu. ",
-  "For the last one, Terima kasih sebab hadir walaupun hanya di alam maya, i hope sangat yang you betul betul serius. Sebab i rasa i dah serius ini. Mungkin belum ready, tapi saya dah melangkah sejauh ini. Terima kasih sebab ajar i banyak bende. Terima kasih sebab terima kekurangan i, tegur kekurangan i. Terima kasih sebab you caring pasal i, walaupun kekadang rimas tapi bila lama lama, saya suka cara tu. Nampak yang awak betul betul kesah pasal saya. Walaupun saya tak tahu, apa sebalik semua tu. Tapi saya berterima kasih atas kesembuhan yang awak tolong ni. Terima kasih sebab tak pernah give up dengan saya and sangat terima kasih that you handle me so well. Saya tak tahu kenapa, tapi bila dengan awak, semua terasa betul and sangat tenang 💖 Saya cuma minta satu je, tolong jangan libatkan orang lain 🥺"
-];
+document.addEventListener("DOMContentLoaded", function () {
+  const popupBtn = document.getElementById("popupBtn");
 
-function showPop(index) {
-  alert(pops[index]);
-}
+  popupBtn.addEventListener("click", function () {
+    alert("You’ve opened the love letter 💌");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const popupBtn1 = document.getElementById("popupBtn1");
+  const popupBtn2 = document.getElementById("popupBtn2");
+
+  popupBtn1.addEventListener("click", function () {
+    alert("You’ve opened the love letter 💌");
+  });
+
+  popupBtn2.addEventListener("click", function () {
+    alert("A reply has been sent with love 💬❤️");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const popupBtn = document.getElementById("popupBtn");
+  const modal = document.querySelector(".modal");
+  const secondModal = document.getElementById("secondModal");
+  const closeBtn = document.querySelector(".modal-content button");
+  const closeSecond = document.getElementById("closeSecond");
+
+  popupBtn.addEventListener("click", function () {
+    modal.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+    // Show second popup after closing first
+    secondModal.style.display = "block";
+  });
+
+  closeSecond.addEventListener("click", function () {
+    secondModal.style.display = "none";
+  });
+});

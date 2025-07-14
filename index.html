@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cinta Chill</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love Letter</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="wrapper">
-    <h1>Hi Cinta  👋</h1>
-    <p>you nak tahu something tak? 😚</p>
+  <div class="letter-container">
+    <h1>Dear You,</h1>
+    <p>
+      I hope this letter finds you well. Just like the morning sun warms the earth,
+      your presence warms my heart. I may not say it often, but you mean the world to me.
+    </p>
+    <p>
+      "Even though we've never met in person, the feeling of love is truly real."
+      Thank you for being you. You’re my comfort, my safe space, and my forever.
+    </p>
+    <p>
+      With all my love,<br />
+      <span class="signature">— your love</span>
+    </p>
 
-    <div class="btn-group">
-      <button onclick="showPop(0)">Tentang awak 💘</button>
-      <button onclick="showPop(1)">Tentang saya ✨</button>
-      <button onclick="showPop(2)">Tentang kita 🫶</button>
-      <button onclick="showPop(3)">last one 💌</button>
-    </div>
+    <button id="popupBtn">Click to open love letter 💌</button>
 
-        <a class="youtube-btn" href="https://youtu.be/u2lsE7cXz88?si=k8vbWtP6eZvmMY6L" target="_blank">
-  💞 you want to know more? click here 💞
-</a>
-
-    <p class="footer">Buat dengan rasa sayang 💖</p>
+<!-- Second Modal (YouTube Link) -->
+<div id="secondModal" class="modal">
+  <div class="modal-content">
+    <p>"These are words from a sincere heart —
+<p>that has kept silent for a year,</p>
+feeling everything in silence🤍" 🎶</p>
+    <a href="https://youtu.be/U22kXkmsMMM?si=OseQ3k1icDf_ZdXQ" target="_blank">"Need more love? Click here 💗"
+    <br><br>
+    <button id="closeSecond">Close</button>
   </div>
+</div>
 
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>
